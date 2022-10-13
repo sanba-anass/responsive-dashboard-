@@ -10,7 +10,24 @@
 		rgba(0, 0, 0, 0.06) 0px 2px 4px -4px;
 	--bg-color: #f1f5f9;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-alt-color);
+}
 * {
 	padding: 0;
 	margin: 0;
@@ -479,7 +496,7 @@ main .main-grid .grid-item3 .grid-3-stats .stat .bar .progress3 {
 	background-color: var(--blue-color);
 	position: relative;
 }
-.badge {
+.badge1 {
 	background-color: var(--blue-color);
 	color: white;
 	padding: 0.2rem 0.4rem;
@@ -526,7 +543,7 @@ main .main-grid .grid-item3 .grid-3-stats .stat3 i {
 	color: var(--green-color);
 	background: #22c55e31;
 }
-main .main-grid .grid-item3 .badge::after {
+main .main-grid .grid-item3 .badge1::after {
 	content: '';
 	color: white;
 	position: absolute;
@@ -2310,3 +2327,4 @@ main .main-grid3 .grid-item div {
 	color: var(--grey-color);
 	font-weight: 500;
 }
+
